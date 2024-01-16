@@ -1,0 +1,178 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is a modified ONE COLUMN version of
+% the following template:
+%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \documentclass[]{deedy-resume-openfont}
+  
+      \begin{document}
+      
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %
+  %     Profile
+  %
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  
+\namesection{Harinder} {Singh}\infoline{\href{mailto:harindersingh2107@gmail.com}{harindersingh2107@gmail.com} | 8901116612 | Sirsa,Haryana}\\\vspace{4pt}\linksline{\descript{\href{https://www.linkedin.com/in/harindersingh441/}{Linkedin | }}\descript{\href{https://github.com/Harinder441}{GitHub | }}\descript{\href{https://www.crio.do/learn/portfolio/harindersingh2107}{Portfolio}}}\underlineheader{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Education
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education}
+\raggedright
+
+    \runsubsection{Crio.Do}\hspace*{\fill}  \location{May 2023 - March 2024}\\
+    \descript{Fellowship Program -Software Development}\hspace*{\fill}\location{Remote}\\
+    
+    \sectionsep
+  
+
+    \runsubsection{Akal University}\hspace*{\fill}  \location{July 2019 - Dec 2022}\\
+    \descript{Bachelors Mathematics}\hspace*{\fill}\location{Talwandi Sabho, Punjabb}\\
+    CGPA: 9.0\\
+    \sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %
+        %     Experience
+        %
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \section{Experience}
+        \runsubsection{Kalgidhar Trust,}\descript{| Full Stack Web Developer}\hfill \location{Remote (Delhi/India) | Jun 2023 – Present}
+            \vspace{4pt}
+\begin{tightemize}
+\item Utilizing React, Inertia, Laravel 9, and MySQL for project development.
+\item Designed and implemented a visually appealing admin panel for student examination, Bug Tracker, Student Portal and expense management using Material UI React.
+\item Developed robust and user-friendly features to enhance overall application functionality.
+\item Successfully managed project timelines and delivered projects on time.
+\end{tightemize}
+            \sectionsep
+        \runsubsection{Business Web Solutions}\descript{| Web Developer}\hfill \location{Remote | Mar 2023 – May 2023}
+            \vspace{4pt}
+\begin{tightemize}
+\item Developed websites using React js.
+\item Implemented responsive design and user-friendly interfaces to enhance the user experience.
+\item Collaborated with a team to ensure seamless integration of front-end and back-end components for a dynamic and interactive web application.
+\item  \custombold{Skills} - HTML/CSS \textbar{}Javascript \textbar{}React js.\textbar{}Web Development.
+\end{tightemize}
+            \sectionsep
+        \runsubsection{IIT Dhanbad}\descript{| Research Intern}\hfill \location{Dhanbad,Jharkhand | July 2022 – Aug 2022}
+            \vspace{4pt}
+\begin{tightemize}
+\item Implemented portfolio optimization models using SVM and fuzzy SVM.
+\item Conducted independent research and development during the internship, resulting in improved portfolio performance.
+\item  \custombold{Skills } - Python \textbar{} Machine Learning \textbar{} Optimization
+\end{tightemize}
+            \sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Skills
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Skills}
+\raggedright
+\begin{longtable}{p{5cm}p{13.5cm}}
+\descript{Programming Languages} & {\location{Javascript, Pytrhon, HTML, CSS, C, C++, PHP}} \\
+\descript{Libraries/Frameworks} & {\location{React js, Inertia js, PHP Laravel, Flask, Bootstrap 5, Tkinter, Node js}} \\
+\descript{Tools / Platforms} & {\location{Github, Notion}} \\
+\descript{Databases} & {\location{MySQL, MongoDB}} \\
+\end{longtable}
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %
+        %     Projects
+        %
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \section{Projects / Open-Source}
+        \vspace{2mm}
+        \raggedright
+        
+            \runsubsection{\large{QKart}}
+            \descript{| \href{https://qkart-backend-harinder.onrender.com/}{Link}}\hfill \location{Javascript,React Js, Node Js, MongoDB, Mongoose, Jest,}\\
+            \begin{tightemize}
+\item[] QKart is an E-commerce application offering a variety of products for customers to choose from.
+\item[] During the course of this project,
+\item  Implemented the core logic for authentication, shopping cart and checkout
+\item  Improved UI by adding responsive design elements for uniform experience across different devices
+\item  Built the complete set of REST APIs for an E-commerce application following the best practices
+\item  Used MongoDB NoSQL database for data storage
+\item  Wrote unit and integration tests to test the implementation
+\end{tightemize}
+            \sectionsep
+          
+        
+            \runsubsection{\large{My Portfolio Website}}
+            \descript{| \href{http://harindersinghportfolio.onrender.com/}{Link}}\hfill \location{HTML/CSS, Javascript, Python, Flask, jinja2, Git, Bootsrap 5, SQL}\\
+            \begin{tightemize}
+\item Developed and deployed a portfolio website using Flask, Python and Git, fully responsive and dynamic.
+\item Implemented an authentication method to allow for editing and updating of website content.
+\item Got experience in deploying web applications using Git, Render.com and ElephantSQL
+\end{tightemize}
+            \sectionsep
+          
+        
+            \runsubsection{\large{Stack overflow clone}}
+            \descript{| \href{https://github.com/Harinder441/stack-overflow-clone-mern}{Link}}\hfill \location{HTML /CSS, Bootstrap, Javascript, React Js}\\
+            \begin{tightemize}
+\item A Frontend Stack Overflow clone built using the React js featuring dashboard for user login/signup, options to add new questions, voting system, and other features.
+\end{tightemize}
+            \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Awards
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Honors \& Awards}
+\vspace{4pt}
+\begin{tightemize}
+\item Got certification for C, C++ and Python Programming Language from Bombay IIT\\
+\item Secured 1st Rank in Programming war, Technophilia 2022, Akal University\\
+\item Solved 57\% DSA Problems using C language at coder.MysirG.com\\
+\end{tightemize}
+      \ 
+      \end{document}
